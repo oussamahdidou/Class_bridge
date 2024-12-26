@@ -1,3 +1,16 @@
+<?php
+
+
+session_start();
+$id = $_SESSION['id'];
+if ($id == null) {
+  return;
+} else {
+  header('location: profile.php');
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
